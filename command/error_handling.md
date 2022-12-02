@@ -96,7 +96,7 @@ import {
   ValidationError,
 } from "https://deno.land/x/cliffy/command/mod.ts";
 
-const cmd = new Command()
+await new Command()
   .option("-c, --color <name:string>", "Choose a color.")
   .action(({ color }) => {
     if (color === "black") {
